@@ -55,3 +55,14 @@
   font-size: 90%;
   color: $gray-light;
 }
+
+// All images scale
+img {
+    @extend .img-fluid;
+}
+
+// Images in posts are rounded and have a shadow
+.img-styled { 
+    @extend .img-rounded; 
+    @extend .img-shadow; 
+}

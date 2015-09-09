@@ -85,6 +85,20 @@ body {
 [tabindex="-1"]:focus {
   outline: none !important;
 }
+*::selection {
+  background: $brand-primary;
+  color: lighten($brand-primary, 75%);
+}
+
+*::-moz-selection {
+  background: $brand-primary;
+  color: lighten($brand-primary, 75%);
+}
+
+*::-webkit-selection {
+  background: $brand-primary;
+  color: lighten($brand-primary, 75%);
+}
 
 
 //

@@ -22,6 +22,14 @@
   }
 }
 
+@mixin make-html-font-sizes($text-sizes: $html-font-sizes) {
+  @each $breakpoint, $text-size in $text-sizes {
+    @include media-breakpoint-up($breakpoint) {
+      font-size: $text-size;
+    }
+  }
+}
+
 @mixin make-row($gutter: $grid-gutter-width) {
   @if $enable-flex {
     display: flex;
